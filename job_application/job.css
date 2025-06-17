@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+      height: 100vh;
+      width:100vw;
+      background-color: beige;
+}
+
+.heading{
+    display:flex;
+    
+}
+
+.heading h1{
+    font-size: 3rem;
+    margin:0.6rem;
+    margin-left: 2.5rem;
+}
+
+.heading h2{
+    margin-top:1.9rem;
+    margin-left:0.1rem;
+}
+
+main{
+    margin-top:0.3rem;
+
+}
+
+.form{
+    display:grid;
+    width:90%;
+    grid-template-columns: repeat(2,1fr);
+    margin-left:3rem;
+    gap:1.6rem;
+}
+
+
+#add{
+    grid-column: span 2;
+}
+
+
+label{
+    font-size:1rem;
+    font-weight: 900;
+}
+
+input{
+    width:90%;
+    height:65%;
+    
+}
+
+select{
+     width:90%;
+     height:70%;
+}
+
+.input:hover{
+    border: 1px solid red;
+}
+
+.foot{
+    margin-top:2.7rem;
+    margin-left:70rem;
+}
+
+.foot button{
+    height:1.8rem;
+    width:6rem;
+    background-color: red;
+    color:white;
+    border:none;
+    border-radius: 6%;
+    font-size: 1.1rem;
+    margin-right:4%;
+
+    
+}
+
+.foot button:active{
+       transform: scale(0.90);
+       color:blue;
+}
+
+
+/* responsiveness make */
+
+
+
+@media (max-width: 1024px) {
+    .form {
+      width: 95%;
+      margin-left: 2rem;
+    }
+  
+    .foot {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .heading {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .heading h1 {
+      font-size: 2rem;
+      margin: 0.5rem 0;
+    }
+  
+    .heading h2 {
+      margin-top: 0;
+    }
+  
+    .form {
+      grid-template-columns: 1fr; /* One column layout on small screens */
+      margin-left: 1rem;
+      width: 95%;
+    }
+  
+    #add {
+      grid-column: span 1; /* Only one column on small screens */
+    }
+  
+    input,
+    select,
+    textarea {
+      width: 100%;
+    }
+  
+    .foot {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      margin-left: 0;
+    }
+  
+    .foot button {
+      width: 80%;
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .foot button {
+      width: 100%;
+      font-size: 1rem;
+    }
+  
+    .form {
+      gap: 1rem;
+      margin-left: 0.5rem;
+      width: 95%;
+    }
+  }
+  
+
+
