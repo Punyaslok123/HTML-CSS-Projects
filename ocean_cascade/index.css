@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+    width:100vw;
+    height:auto;
+    background-image:url(https://images.pexels.com/photos/3155666/pexels-photo-3155666.jpeg?auto=compress&cs=tinysrgb&w=400);
+    background-size: cover; 
+
+}
+
+body{
+  overflow: hidden;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+.left_nav{
+     height:25px;
+     width:100px;
+     margin:10px;
+     color:white;
+     font-size: large;
+     border: 2px solid white;
+     text-align: center;
+}
+
+.right_nav ul{
+    display: flex;
+}
+
+#first{
+    background-color: white;
+    height: 25px;
+    width:60px;
+    color:black;
+    text-align: center;
+}
+.right_nav ul li{
+    margin:10px;
+    margin-left:20px;
+    color:white;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.right_nav ul li:hover{
+  color:black;
+  cursor: pointer;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.box{
+     color:rgb(48, 9, 9)
+}
+
+.box h1{
+    font-size:2.5rem;
+}
+
+.sub_box{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sub_box span{
+     border:1px solid white;
+     padding: 2px;
+     margin:3px;
+}
+
+.sub_box span{
+     border: 1px solid;
+     padding: 2px;
+}
+
+/* responsiveness add */
+
+@media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .right_nav ul {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0;
+      margin: 10px 0;
+    }
+  
+    .right_nav ul li {
+      margin: 5px 10px;
+    }
+  
+    .box h1 {
+      font-size: 2rem;
+    }
+  
+    .sub_box span {
+      padding: 6px 12px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .left_nav {
+      width: auto;
+      padding: 5px 10px;
+      font-size: 1rem;
+    }
+  
+    .box h1 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  
+    .sub_box {
+      flex-direction: column;
+      gap: 8px;
+    }
+  
+    .sub_box span {
+      width: 80%;
+      text-align: center;
+    }
+  
+    .right_nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
